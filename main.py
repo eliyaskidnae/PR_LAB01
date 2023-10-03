@@ -11,12 +11,12 @@ if __name__ == "__main__":
            np.array([[-20, 3]]).T,
            np.array([[40,-40]]).T]
     xs0 = np.zeros((6,1))   # initial simulated robot pose
-    print
+    print(xs0)
 
     robot = DifferentialDriveSimulatedRobot(xs0, M2D) # instantiate the simulated robot object
 
     kSteps = 5000 # number of simulation steps
-    xsk_1 = xs0 = np.zeros((6, 1))  # initial simulated robot pose
+    xsk_1 = xs0 = np.zeros((6, 1))  # initial simulated robot poses
     index = [IndexStruct("x", 0, None), IndexStruct("y", 1, None), IndexStruct("yaw", 2, 1)] # index of the state vector used for plotting
 
     x0=Pose3D(np.zeros((3,1)))
