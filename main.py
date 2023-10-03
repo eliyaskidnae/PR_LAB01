@@ -11,6 +11,7 @@ if __name__ == "__main__":
            np.array([[-20, 3]]).T,
            np.array([[40,-40]]).T]
     xs0 = np.zeros((6,1))   # initial simulated robot pose
+    print
 
     robot = DifferentialDriveSimulatedRobot(xs0, M2D) # instantiate the simulated robot object
 

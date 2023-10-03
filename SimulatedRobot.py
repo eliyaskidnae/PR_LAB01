@@ -3,8 +3,10 @@ import numpy as np
 
 class SimulatedRobot:
     """
-    This is the base class to simulate a robot. There are two operative frames: the world  N-Frame (North East Down oriented) and the robot body frame body B-Frame.
-    Each robot has a motion model and a measurement model. The motion model is used to simulate the robot motion and the measurement model is used to simulate the robot measurements.
+    This is the base class to simulate a robot. There are two operative frames: 
+    the world  N-Frame (North East Down oriented) and the robot body frame body B-Frame.
+    Each robot has a motion model and a measurement model. The motion model is used to simulate 
+    the robot motion and the measurement model is used to simulate the robot measurements.
 
     **All Robot simulation classes must derive from this class** .
 
@@ -62,7 +64,7 @@ class SimulatedRobot:
 
         feature_circle = []
         for i in range(len(map)):
-            feature_circle.append(patches.Circle((map[i][0], map[i][1]), 0.5, fc='r'))
+            feature_circle.append(patches.Circle((map[i][0] , map[i][1]) , 0.5 , fc='r'))
             self.vehicleAxes.add_patch(feature_circle[i])
 
         self.xTraj = [xs0[0, 0]]
